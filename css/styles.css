@@ -1,0 +1,225 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url("../images/arcade.gif");
+    /* background: linear-gradient(to bottom, darkred, black); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    --accent-col: #141449;
+    --accent-col-partial-transparent: #0f0f8b77;
+    --accent-col-transparent: #531202fd;
+    background: linear-gradient(to bottom, var(--accent-col), var(--accent-col-partial-transparent), var(--accent-col-transparent));
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 2px solid darkred;
+}
+
+
+#logo {
+    width: 150px;
+    padding: 0.4rem;
+    aspect-ratio: 35 / 4;
+}
+
+nav {
+    width: 50%;
+    max-width: 300px;
+    height: 50px;
+}
+
+.header-nav {
+    display: flex;
+    list-style-type: none;
+    margin-left: 150px;
+    text-align: center;
+}
+
+a {
+    margin-right: 20px;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.header-quote {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:darksalmon;
+    margin: 0;
+    font-size: 20px;
+}
+
+header a:hover {
+    background-color: red;
+    border-bottom: 5px solid black;
+    transition: all ease-in-out 500ms;
+}
+
+.content {
+    background-image: linear-gradient(to bottom, #1b1b32, #1c0000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.gif {
+    background-image: linear-gradient(to bottom, #1c0000, #1b1b32);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    width: 40%;
+}
+
+.team {
+    background-image: linear-gradient(to bottom, #1b1b32, #1c0000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    width: 90%;
+}
+
+.gif-size {
+    width: 90%;
+    height: 90%;
+    padding: 10px 10px 10px;
+}
+
+
+.center {
+    background-color: #1b1b32;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.welcome {
+    text-shadow: 8px 8px 12px rgba(255,  0, 0, .7);
+    /* background-color: cadetblue; */
+    color: darksalmon;
+    margin: 10px;
+    /* border: 2px solid red;
+    border-radius: 6px; */
+    font-size: 50px;
+}
+
+div {
+    display: block;
+}
+
+h1 {
+    color: darksalmon;
+}
+
+h2 {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.dbfz {
+    padding: 50px;
+}
+
+/* This is for footer links */
+footer {
+    border: 2px solid;
+    border-color: purple;
+    background-color: #1b1b32;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    color: white;
+    font-size: 14px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+h3 {
+    display: inline-block;
+}
+
+footer ul li {
+    display: inline-block;
+    margin-bottom: 10px;
+}  
+  
+footer ul li a {
+    color: #666;
+    text-decoration: none;
+}
+  
+footer ul li a:hover {
+    color: aqua;
+}
+  
+.social {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+.social li {
+    display: inline-block;
+    margin-right: 10px;
+}
+  
+.social li:last-child {
+    margin-right: 0;
+}
+  
+.social li a {
+    color: #666;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 30px;
+}
+  
+.social li a:hover {
+    color: aqua;
+}
+
