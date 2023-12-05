@@ -20,46 +20,115 @@ body::before {
     opacity: 1;
 }
 
-header {
-    width: 100%;
-    height: 50px;
-    --accent-col: #141449;
-    --accent-col-partial-transparent: #0f0f8b77;
-    --accent-col-transparent: #531202fd;
-    background: linear-gradient(to bottom, var(--accent-col), var(--accent-col-partial-transparent), var(--accent-col-transparent));
-    display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    border-bottom: 2px solid darkred;
-}
-
-
-#logo {
+.logo {
     width: 150px;
-    padding: 0.4rem;
-    aspect-ratio: 35 / 4;
+    height: auto;
 }
 
-nav {
-    width: 50%;
-    max-width: 300px;
-    height: 50px;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.header-nav {
-    display: flex;
-    list-style-type: none;
-    margin-left: 150px;
-    text-align: center;
+header {
+    background-color: #262626;
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+}
+
+li {
+    list-style: none;
 }
 
 a {
-    margin-right: 20px;
     color: white;
-    padding: 14px 16px;
     text-decoration: none;
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-branding {
+    font-size: 2rem;
+}
+
+.nav-link {
+    transition: 0.7s ease;
+}
+
+.nav-link:hover {
+    color: dodgerblue;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+@media(max-width:768px){
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #262626;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .div {
+        transform: scale(0.8);
+    }
 }
 
 .header-quote {
@@ -69,20 +138,68 @@ a {
     font-size: 20px;
 }
 
-footer {
-    color: white;
-    background-color: black;
-    display: grid;
-    grid-template-rows: 3fr .1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 16px;
+.title {
+    color: darksalmon;
+    text-shadow: 8px 8px 12px rgba(255,  0, 0, .7);
 }
 
-header a:hover {
-    background-color: red;
-    border-bottom: 5px solid black;
+.contact-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #1b1b32;
+    color: white;
+    border-radius: 25px;
+    border: 2px solid;
+    border-color: purple;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.cont {
+    background-image: linear-gradient(to bottom, #1b1b32, #1c0000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    margin-top: 10px;
+    padding: 10px;
+    border: 2px solid;
+    border-color: purple;
+    border-radius: 25px;
+}
+
+.img-size {
+    max-width: 100%;
+    height: auto;
+}
+
+.link {
+    display: grid;
+}
+
+.email:hover {
+    color: orange;
+    text-shadow: 8px 8px 12px rgba(255, 187, 0, 0.87);
+    border-bottom: 5px solid darkgoldenrod;
     transition: all ease-in-out 500ms;
 }
+
+.youtube:hover {
+    color: red;
+    text-shadow: 8px 8px 12px rgba(255,  0, 0, .7);
+    border-bottom: 5px solid darkred;
+    transition: all ease-in-out 500ms;
+}
+
+.twitch:hover {
+    color: purple;
+    text-shadow: 8px 8px 12px rgba(255, 0, 191, 0.7);
+    border-bottom: 5px solid darkmagenta;
+    transition: all ease-in-out 500ms;
+}
+
+
 
 
 
@@ -164,3 +281,21 @@ footer ul li a:hover {
 .social li a:hover {
     color: aqua;
 }
+
+/* media query */
+@media screen and (max-width:1024px) {
+    .cont {
+       flex-direction: column;
+    }
+    
+}
+
+@media screen and (max-width:576px) {
+    a {
+      font-size: 65%;  
+    }
+}
+
+
+
+

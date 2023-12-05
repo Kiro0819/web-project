@@ -6,21 +6,139 @@
     <title>Kaze</title>
     <link rel="icon" href="./images/pagelogo.png" type="image/png">
     <link rel="stylesheet" href="css/schedule.css">
+    <script src="./js/clock.js" defer></script>
 </head>
 <body>
-    <header>
-       <img id="logo" src="./images/LOGO.PNG">
-       <h1 class="header-quote">Where Gamers Relive Their Moments</h1>
-        <nav>
-            <ul class="header-nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="schedule.html">Schedule</a></li>
-                <li><a href="survey.html">Survey</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <nav class="navbar">
+     <a href="#" class="nav-branding"><img src="./images/LOGO.png" alt="" class="logo"></a>
+     <div><h1 class="header-quote">Where Gamers Relive Their Moments</h1></div>
+
+     <ul class="nav-menu">
+       <li class="nav-item">
+         <a href="index.html" class="nav-link">Home</a>
+       </li>
+       <li class="nav-item">
+         <a href="about.html" class="nav-link">About</a>
+       </li>
+       <li class="nav-item">
+         <a href="contact.html" class="nav-link">Contact</a>
+       </li>
+       <li class="nav-item">
+         <a href="schedule.html" class="nav-link">Schedule</a>
+       </li>
+       <li class="nav-item">
+         <a href="survey.html" class="nav-link">Survey</a>
+       </li>
+     </ul>
+     <div class="hamburger">
+       <span class="bar"></span>
+       <span class="bar"></span>
+       <span class="bar"></span>
+       <span class="bar"></span>
+       <span class="bar"></span>
+     </div>
+    </nav>
+ </header>
+ <script src="./js/script.js"></script>
+    <div class="schedule-section">
+      <h1 class="title">Schedule</h1>
+      <hr>
+      <p>This section has the information of the Business hours and Streaming hours in Kaze Studio</p>
+    </div>
+    <br>
+    <div class="cont-clock">
+      <div class="clock">
+        <div class="clock-face">
+            <div class="hand hour-hand"></div>
+            <div class="hand min-hand"></div>
+            <div class="hand second-hand"></div>
+            <div class="button"></div>
+        </div>
+      </div>
+      <div class="digital-clock">
+        <div class="time">11:30:00</div>
+      </div>
+    </div>
+    <div class="cont">
+      <div class="schedule-container">
+        <table class="schedule">
+            <caption>Kaze Studio Weekly Schedule</caption>
+            <colgroup>
+            <col id="timeOfDay">
+            <col class="dayOfWeek" span="8">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Sunday</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>0800</td>
+                    <td rowspan="13" class="spanned">Off</td>
+                    <td colspan="2" rowspan="3" class="close">Closed</td>
+                    <td rowspan="13" class="spanned">Off</td>
+                    <td colspan="3" rowspan="3" class="close">Closed</td>
+                </tr>
+                <tr>
+                    <td>0830</td>
+                </tr>
+                <tr>
+                    <td>0930</td>
+                </tr>
+                <tr>
+                    <td>1030</td>
+                    <td colspan="2" rowspan="4" class="stream">Streaming/Practice</td>
+                    <td colspan="3" rowspan="4" class="stream">Streaming/Practice</td>
+                </tr>
+                <tr>
+                    <td>1230</td>
+                </tr>
+                <tr>
+                    <td>1300</td>
+                </tr>
+                <tr>
+                    <td>1455</td>
+                </tr>
+                <tr>
+                    <td>1700</td>
+                    <td rowspan="2" colspan="2"  class="break">Breaktime</td>
+                    <td rowspan="2" colspan="3"  class="break">Breaktime</td>
+                </tr>
+                <tr>
+                    <td>1830</td>
+                </tr>
+                <tr>
+                    <td>2000</td>
+                    <td rowspan="2" colspan="2" class="team-practice">Team Practice</td>
+                    <td rowspan="2" colspan="3" class="team-practice">Team Practice</td>
+                </tr>
+                <tr>
+                    <td>2230</td>
+                    
+                </tr>
+                <tr>
+                    <td>0300</td>
+                    <td colspan="2" class="close">Closed</td>
+                    <td colspan="3" class="close">Closed</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="8" class="spanned">Weekly Schedule</th>
+                </tr>
+            </tfoot>
+        </table>
+      </div>
+    </div>
     <footer>
         <div class="container">
           <div class="row">
@@ -31,6 +149,8 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Schedule</a></li>
+                <li><a href="#">Survey</a></li>
               </ul>
             </div>
             <div>

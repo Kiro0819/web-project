@@ -8,21 +8,40 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-       <img id="logo" src="./images/LOGO.PNG">
-       <h1 class="header-quote">Where Gamers Relive Their Moments</h1>
-        <nav>
-            <ul class="header-nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="schedule.html">Schedule</a></li>
-                <li><a href="survey.html">Survey</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <nav class="navbar">
+     <a href="#" class="nav-branding"><img src="./images/LOGO.png" alt="" class="logo"></a>
+     <div><h1 class="header-quote">Where Gamers Relive Their Moments</h1></div>
+
+     <ul class="nav-menu">
+       <li class="nav-item">
+         <a href="index.html" class="nav-link">Home</a>
+       </li>
+       <li class="nav-item">
+         <a href="about.html" class="nav-link">About</a>
+       </li>
+       <li class="nav-item">
+         <a href="contact.html" class="nav-link">Contact</a>
+       </li>
+       <li class="nav-item">
+         <a href="schedule.html" class="nav-link">Schedule</a>
+       </li>
+       <li class="nav-item">
+         <a href="survey.html" class="nav-link">Survey</a>
+       </li>
+     </ul>
+     <div class="hamburger">
+       <span class="bar"></span>
+       <span class="bar"></span>
+       <span class="bar"></span>
+       <span class="bar"></span>
+       <span class="bar"></span>
+     </div>
+    </nav>
+ </header>
+ <script src="./js/script.js"></script>
     <div class="center">
-        <img src="./images/pagelogo.png">
+        <img src="./images/pagelogo.png" class="pagelogo">
         <h1 class="welcome">Welcome to Kaze Studio! <hr>
         Let's Get Started</h1>
     </div>
@@ -33,8 +52,8 @@
         <!-- <video src="/images/dbfz.gif" autoplay loop muted width="500" height="300"></video>-->
         <img src="./images/dbfz.gif" alt="dbfz" class="dbfz">
     </div>
-    <div class="gif">
-        <img src="./images/tekken.gif" alt="tekken" class="gif-size">
+    <div class="team">
+        <img src="./images/tekken.gif" alt="tekken" class="img-size" width="500" height="300">
     </div>
     <div class="content">
         <h1>Queue Up With Others to Improve and Make Connections With Others
@@ -43,19 +62,22 @@
         </h1>
     </div>
     <div class="team">
-        <img src="./images/valorant.gif" alt="valorant" class="gif-size">
-        <img src="./images/lol.gif" alt="lol" class="gif-size">
+        <img src="./images/valorant.gif" alt="valorant" class="img-size" width="500" height="300">
+        <img src="./images/lol.gif" alt="lol" class="img-size" width="500" height="300">
     </div>
+    <br>
     <footer>
         <div class="container">
           <div class="row">
-            <img src="./images/LOGO.PNG" alt="">
+            <img src="./images/LOGO.png" alt="">
             <div>
               <h3>Links</h3>
               <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Schedule</a></li>
+                <li><a href="#">Survey</a></li>
               </ul>
             </div>
             <div>
