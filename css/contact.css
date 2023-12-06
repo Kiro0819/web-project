@@ -289,11 +289,26 @@ footer ul li a:hover {
     .cont {
        flex-direction: column;
     }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .row > img {
+        width: 80%;
+    }
+
+    .social {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
     
 }
 
 @media screen and (max-width:576px) {
-    a {
+    .email, .youtube, .twitch {
       font-size: 65%;  
     }
 }

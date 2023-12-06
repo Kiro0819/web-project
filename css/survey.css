@@ -313,3 +313,20 @@ footer ul li a:hover {
 .social li a:hover {
     color: aqua;
 }
+
+@media screen and (max-width:1024px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .row > img {
+        width: 80%;
+    }
+
+    .social {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
