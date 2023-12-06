@@ -316,131 +316,43 @@ footer ul li a:hover {
     .nav-menu.active {
         left: 0;
     }
+}
 
+@media screen and (max-width:1024px) {
     .center {
-        transform: scale(.7);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pagelogo {
+        width: 60%;
     }
 
     .welcome {
-        transform: scale(.8);
+        font-size: 100%;
     }
 
     .content {
-        transform: scale(.7);
+        flex-direction: column;
+        font-size: 80%;
     }
 
-    .content h1 {
-        transform: scale(.8);
-    }
-
-}
-
-
-@media(max-width:700px) {
-    .center {
-        transform: scale(.7);
-    }
-    
-    .pagelogo {
-        transform: scale(.8);
-    }
-
-    .welcome {
-        transform: scale(.6);
-    }
-
-    .content {
-        transform: scale(.7);
-    }
-
-    .content h1 {
-        transform: scale(.6);
-    }
-}
-
-@media(max-width:650px) {
-    .center {
-        transform: scale(.6);
-    }
-    
-    .pagelogo {
-        transform: scale(.7);
-    }
-
-    .welcome {
-        transform: scale(.5);
-    }
-}
-
-@media(max-width:600px) {
     .dbfz {
-        transform: scale(.8);
-    }
-
-    .center {
-        transform: scale(.5);
-    }
-
-    .pagelogo {
-        transform: scale(.6);
-    }
-
-    .welcome {
-        transform: scale(.4);
-    }
-}
-
-@media screen and (max-width:600px) {
-    .center {
-        width: 600px;
-        justify-content: center;
-    }
-    
-    .content {
-        width: 600px;
-        left: -100px;
+        width: 80%;
     }
 
     footer {
-        width: 600px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .row > img {
+        width: 80%;
     }
 
-    .container {
-        position: relative;;
-        transform: scale(.6);
+    .social {
         justify-content: center;
-        left: -50px;
+        align-items: center;
+        flex-direction: column;
     }
-}
-
-@media screen and (max-width:500px) {
-    .content {
-        left: -50px;
-        position: relative;
-    }
-
-    .center {
-        left: -50px;
-    }
-}
-
-@media screen and (max-width:412px) {
-    .center {
-        width: 600px;
-        left: -100px;
-    }
-
-    html {
-        width: 412px;
-        height: auto;
-    }
-
-    .dbfz {
-        transform: scale(.5);
-        width:  50%;
-
-    .content h1 {
-        right: -200px;
-    }
-}
 }
